@@ -1,0 +1,603 @@
+/* style.css */
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+  }
+  nav {
+    overflow: hidden;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  nav ul li {
+    float: none; 
+  }
+  
+  nav ul li a {
+    font-weight: bold;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 10px; 
+    text-decoration: none;
+  }
+
+  
+  nav ul li a:hover {
+    background-color: #111;
+  }
+
+  /* Footer Styles */
+.footer-container {
+  margin-top: 45px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-section {
+  width: 22%;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+  font-size: 0.9em;
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+/* Social Icons */
+.social-icon {
+  margin-bottom: 9px;
+  display: flex;
+  margin-right: 10px;
+  color: #ddd;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #fff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  background-color: #222;
+}
+
+.footer-bottom p,
+.footer-bottom .footer-links {
+  font-size: 0.9em;
+  color: #ddd;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin-left: 10px;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+
+
+  .error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: none; 
+  }
+  
+ /* Main content container styling */
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 50px; 
+  box-sizing: border-box; 
+}
+
+/* Booking container styling */
+.booking-container {
+  margin-left: 33%;
+  width: 30%;
+  padding: 20px;
+  align-items: center;
+}
+
+/* Booking form styling */
+.booking-form {
+  
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.booking-form h2 {
+  margin-bottom: 20px;
+}
+
+.booking-form label {
+  color: #555;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.booking-form input {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.booking-form button:hover {
+  background-color: #404140;
+}
+
+/* Book Now title styling */
+.book-now {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-size: 100px;
+  padding-right: 100px; 
+}
+
+.book-now h1 {
+  margin: 0;
+}
+
+/* Container for the login form */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
+
+/* Login form styling */
+.login-container {
+  margin: 50px;
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  color: #333; 
+  text-align: center;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555; 
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-sizing: border-box; 
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333; 
+  color: white;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-form button:hover {
+  background-color: #555; 
+}
+
+  
+
+  .about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+  
+  .about-container h1 {
+    color: white;
+    font-size: 2.5em;
+  }
+  
+  .about-container p {
+    font-size: 1.2em;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  .about-container h2 {
+    margin-top: 40px;
+    color: white;
+    font-size: 2em;
+  }
+
+
+.dark-background .main-content {
+  position: relative;
+  padding: 20px;
+}
+
+/* Contact Us Page Styles */
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-container h1 {
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  font-size: 1.2em;
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-container form label {
+  display: block;
+  font-size: 1.1em;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.contact-container form input,
+.contact-container form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-container form button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-container form button:hover {
+  background-color: #555;
+}
+
+
+main {
+  padding: 20px 20px;
+}
+
+.main-content h1 {
+  color: white;
+  margin-top: 0; 
+  margin-bottom: 20px; 
+  text-align: center; 
+}
+
+.room-options {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+}
+
+.room {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 calc(33.333% - 20px); 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: calc(33.333% - 20px); 
+  box-sizing: border-box; 
+}
+
+.room img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+}
+
+.room h2 {
+  margin-top: 0;
+}
+
+.room p.price {
+  font-weight: bold;
+  color: grey;
+}
+
+.room button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.room button:hover {
+  background-color: #3f3838;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; 
+  padding: 20px;
+  border: 1px solid #555;
+  width: 20%; 
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal form label {
+  margin-top: 10px;
+}
+
+.modal form input,
+.modal form button {
+  margin-top: 5px;
+
+}
+
+.modal form button {
+  color: white;
+  background-color: #555;
+}
+
+.content-area {
+  padding: 20px;
+}
+
+/* Heading Style in Content Area */
+.content-area h1, .main-contents h1 {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual Service Style */
+.service {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 calc(33.333% - 20px); 
+  max-width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center; 
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px; 
+}
+
+.service h2 {
+  margin-top: 0;
+}
+
+.service p {
+  margin: 0;
+}
+
+
+.config {
+  margin-top: 80px; 
+  margin-left: 300px;
+  text-align: center;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  width: 100%;
+  max-width: 600px; 
+}
+
+/* Heading */
+.config h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #28292b; 
+}
+
+/* Paragraph */
+.config p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Return to Home link */
+.config a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333; 
+  color: white;
+  text-decoration: none;
+  border-radius: 5px; 
+  font-size: 16px;
+}
+
+.config a:hover {
+  background-color: #8d948d; 
+}
+
+header {
+  margin-top: 50px;
+  margin-bottom: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; 
+  background-image: url('hero-background.jpg'); 
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #555; 
+  color: white;
+  text-decoration: none;
+  border-radius: 5px; 
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background-color: #808680; 
+}
+
+

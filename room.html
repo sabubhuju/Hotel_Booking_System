@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Selection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="booking.html">Home</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <h2 style="color: white;">XYZ Hotel</h2>
+      <li><a href="room.html">Rooms</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="booking.html">Login/Register</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="main-contents">
+      <h1>Our Rooms</h1>
+      <section class="room-options">
+        <div class="room">
+          <img src="image.png" alt="Deluxe Room">
+          <h2>Deluxe Room</h2>
+          <p>Experience luxury with our Deluxe Room. Includes a king-sized bed, private balcony, and stunning views.</p>
+          <p class="price">$200 per night</p>
+          <button onclick="openModalForDeluxeRoom()">Book Now</button>
+        </div>
+        
+        <div class="room">
+          <img src="image2.png" alt="Family Room">
+          <h2>Family Room</h2>
+          <p>The Family Room is designed for comfort with extra space and additional beds for a family stay.</p>
+          <p class="price">$250 per night</p>
+          <button onclick="openModalForFamilyRoom()">Book Now</button>
+        </div>
+        <div class="room">
+          <img src="image3.jpg" alt="Penthouse Suite">
+          <h2>Penthouse Suite</h2>
+          <p>Our Penthouse Suite offers unparalleled luxury with panoramic views, a private terrace, and premium amenities.</p>
+          <p class="price">$500 per night</p>
+          <button onclick="openModalForPenthouseSuite()">Book Now</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Modal for Booking Form -->
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Booking Form</h2>
+      <form id="bookingForm" action="book_room.php" method="POST">
+        <input type="hidden" id="roomType" name="room_type" value="">
+    
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required>
+    
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required>
+    
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+    
+        <button type="submit">Submit</button>
+    </form>
+    
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <!-- About Section -->
+      <div class="footer-section about">
+        <h3>XYZ Hotel</h3>
+        <p>Experience comfort, convenience, and luxury at our premier hotel. We offer top-notch amenities and services to ensure an unforgettable stay.</p>
+      </div>
+  
+      <!-- Contact Section -->
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+        <p><strong>Phone:</strong> +123-456-7890</p>
+        <p><strong>Email:</strong> info@hotelbooking.com</p>
+      </div>
+  
+      <!-- Quick Links Section -->
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="room.html">Rooms</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+  
+      <!-- Social Media Section -->
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <a href="#" class="social-icon">Facebook</a>
+        <a href="#" class="social-icon">Twitter</a>
+        <a href="#" class="social-icon">Instagram</a>
+        <a href="#" class="social-icon">LinkedIn</a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 XYZ Hotel. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script>
+    // Get the modal
+var modal = document.getElementById("bookingModal");
+
+// Function to open the modal
+function openModal(roomType) {
+    document.getElementById("roomType").value = roomType;
+    modal.style.display = "block";
+}
+
+// Example usage
+function openModalForDeluxeRoom() {
+    openModal("Deluxe Room");
+}
+
+function openModalForFamilyRoom() {
+    openModal("Family Room");
+}
+
+function openModalForPenthouseSuite() {
+    openModal("Penthouse Suite");
+}
+
+// Function to close the modal
+function closeModal() {
+    modal.style.display = "none";
+}
+
+// Close the modal if the user clicks outside of it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+  </script>
+</body>
+</html>
+  
+  
